@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.mycollection.Collection&apos; to &apos;ListScreen&apos;&#x0A;- Original project: &apos;Mycollection&apos;&#x0A;- Original element: &apos;com.example.mycollection.Collection&apos;&#x0A;- Renamed element: &apos;com.example.mycollection.ListScreen&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Collection&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.example.mycollection{Collection.java[Collection" matchStrategy="1" name="ListScreen" qualified="false" references="true" similarDeclarations="false" stamp="1405091790582" textual="false" version="1.0"/>
+</session>

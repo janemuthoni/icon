@@ -1,0 +1,11 @@
+package pau.paulo.calculator;
+
+import android.support.v7.app.ActionBarActivity;
+
+public class register extends ActionBarActivity {
+	
+	register button btnlogin;
+	
+	
+
+}

@@ -1,0 +1,67 @@
+package soniyah.example.akirachix;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class RegisterScreen extends ActionBarActivity implements OnClickListener{
+     EditText etfirstname;
+     EditText etsecondname;
+     EditText etpassword;
+     Button   btnCancel;
+     Button   btnLogin;
+      
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		//initializing of variables
+	    setContentView(R.layout.register);
+	    etfirstname =(EditText) findViewById(R.id.buttonfirstname);
+	    etfirstname.setOnClickListener(this);
+	    
+	    etsecondname =(EditText) findViewById(R.id.buttonsecondname);
+	    etsecondname.setOnClickListener(this);
+	    
+	    etpassword =(EditText) findViewById(R.id.btnpassword);
+	    etpassword.setOnClickListener(this);
+	    
+	    btnLogin =(Button)findViewById(R.id.buttonLogin);
+	    btnLogin.setOnClickListener(this);
+	    
+	    btnCancel =(Button)findViewById(R.id.btnCancel);
+	    btnCancel.setOnClickListener(this); 
+	    
+	    	 
+	}
+
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.buttonfirstname:
+			
+		break;
+		case R.id.buttonsecondname:
+		break;
+		
+		case R.id.btnpassword:
+			break;
+			
+		case R.id.buttonLogin:
+			break;
+			
+		case R.id.btnCancel:
+			break;
+
+		default:
+			break;
+		}
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

@@ -1,0 +1,40 @@
+package com.example.mycollection;
+
+import java.util.ArrayList;
+
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.os.Build;
+
+public class CountriesActivity extends ActionBarActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.countries);
+		
+		
+		 ArrayList<String> list = new ArrayList<String>();
+		 list.add("japan");
+		 list.add("dubai");
+		 list.add("Idhonesia");
+		 list.add("Argentina");
+		 list.add("Germany");
+		 list.add("Ghana");
+		 list.add("Tanznia");
+		 list.add("Rwanda");
+		
+		
+	}
+
+	
+}
+
+		

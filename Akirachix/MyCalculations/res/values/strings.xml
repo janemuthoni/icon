@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My calculations</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+      <string name="phonenumber">072432778</string>
+      <string name="username">Akirachix</string>
+      <string name="ts"></string>
+
+</resources>

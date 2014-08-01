@@ -1,0 +1,7 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.tests.radioStateCommand1/org.eclipse.ui.commands.radioState=value2
+RUN_IN_BACKGROUND=true
+UIActivities.org.eclipse.activity5=true
+UIActivities.org.eclipse.activity6=true
+UIActivities.org.eclipse.activity7=true
+eclipse.preferences.version=1
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands/>

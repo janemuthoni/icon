@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cyan" >
+
+       <requestFocus />
+
+       <Button
+           android:id="@+id/Submit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignRight="@+id/firstname"
+           android:layout_margin="5dp"
+           android:paddingLeft="0dp"
+           android:text="@string/buttonSubmit"
+           android:textColor="@color/black"
+           android:textSize="15sp" />
+
+       <TextView
+           android:id="@+id/idnumber"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/editText3"
+           android:layout_alignParentLeft="true"
+           android:text="@string/Textviewidnumber"
+           android:textColor="@color/black"
+           android:textSize="20sp" />
+
+       <EditText
+           android:id="@+id/editText2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/firstname"
+           android:ems="10"
+           android:inputType="textPersonName" />
+
+       <EditText
+           android:id="@+id/editText1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/secondname"
+           android:ems="10"
+           android:inputType="textPersonName" />
+
+       <TextView
+           android:id="@+id/email"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignRight="@+id/idnumber"
+           android:layout_below="@+id/editText1"
+           android:text="@string/Textviewemail"
+           android:textSize="20sp" />
+
+       <EditText
+           android:id="@+id/editText4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/email"
+           android:ems="10"
+           android:inputType="textEmailAddress" />
+
+       <EditText
+           android:id="@+id/editText5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/idnumber"
+           android:ems="10"
+           android:inputType="number" />
+
+       <TextView
+           android:id="@+id/firstname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_toRightOf="@+id/email"
+           android:text="@string/Textviewfirstname"
+           android:textColor="@color/black"
+           android:textSize="20sp" />
+
+       <Button
+           android:id="@+id/Cancel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_margin="5dp"
+           android:layout_marginRight="43dp"
+           android:paddingLeft="20dp"
+           android:text="@string/buttonCancel" />
+
+       <TextView
+           android:id="@+id/secondname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/firstname"
+           android:layout_below="@+id/editText2"
+           android:text="@string/Textviewsecondname"
+           android:textColor="@color/black"
+           android:textSize="20sp" />
+
+       <EditText
+           android:id="@+id/editText3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:ems="10"
+           android:inputType="number" />
+
+</RelativeLayout>

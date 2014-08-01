@@ -1,0 +1,41 @@
+package pau.paulo.calculator;
+
+public class Calculations {
+
+	
+	public int addition( int numberone, int numbertwo) {
+	    
+	    int result=numberone+numbertwo;
+	    return result; 
+
+	}
+	public int  subtraction(int Numberone,int Numbertwo){
+
+	   int answer=Numberone-Numbertwo;
+	   return answer;
+	}
+
+	public  double division(double numberone, double numbertwo){
+
+	double x=numberone/numbertwo;
+	return x;
+	  
+	}
+
+	public double muliplication(double numberone, double numbertwo){
+	double y=numberone*numbertwo;
+	return y;
+
+
+	}
+
+	}
+
+
+
+
+
+
+
+
+

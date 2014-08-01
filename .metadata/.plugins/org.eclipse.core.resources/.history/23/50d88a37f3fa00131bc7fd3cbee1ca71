@@ -1,0 +1,89 @@
+package pau.paulo.calculator;
+
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class HomeScreen extends ActionBarActivity implements OnClickListener {
+	
+	
+	 String         Strnumberone,Strnumbertwo;
+	
+	 EditText      etnumberone, etnumbertwo;
+	 Button        btnadd, btnmultiply, btndivision, btnsubtraction;
+	 TextView      tvresults;
+     Calculations  calcs;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.homescreen);
+		
+		tvresults=(TextView)findViewById(R.id.tvresults);
+		tvresults.setOnClickListener(this);
+		
+		etnumberone=(EditText)findViewById(R.id.editnumberone);
+		etnumberone.setOnClickListener(this);
+		
+		etnumbertwo=(EditText)findViewById(R.id.editTextnumbertwo);
+		etnumbertwo.setOnClickListener(this);
+		
+		btnadd=(Button)findViewById(R.id.buttonAdd);
+		btnadd.setOnClickListener(this);
+		
+		
+		btnmultiply=(Button)findViewById(R.id.buttonmultiply);
+		btnmultiply.setOnClickListener(this);
+		
+		btndivision=(Button)findViewById(R.id.buttondivision);
+		btndivision.setOnClickListener(this);
+		
+		btnsubtraction=(Button)findViewById(R.id.buttonsubtraction);
+		btnsubtraction.setOnClickListener(this);
+		calcs = new Calculations();
+	}		 
+	   
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.buttonAdd:
+			Toast.makeText(getApplicationContext(), "welcome to home screen", Toast.LENGTH_LONG).show();
+			//startActivity(new Intent(getApplicationContext(),HomeScreen.class));
+			
+			  //integer to String.
+			Strnumberone= etnumberone.getText().toString();
+			 //integer to String.
+		    Strnumbertwo= etnumbertwo.getText().toString();
+			//convert String to Integer.
+	        int numberone=Integer.parseInt(Strnumberone);
+	        int numbertwo=Integer.parseInt(Strnumbertwo);
+			int result = calcs.addition(numberone,numbertwo);
+	         //convert integer back to String
+	         String answer=String.valueOf(result);
+	         tvresults.setText("result " + answer);
+			
+break;
+default:
+			break;
+		}
+
+
+	
+	}
+
+
+}
+	
+
+
+
+
+
+
+
+

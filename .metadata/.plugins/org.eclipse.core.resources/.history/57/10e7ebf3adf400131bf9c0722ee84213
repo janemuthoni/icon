@@ -1,0 +1,22 @@
+package pau.paulo.calculator;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+
+public class register extends ActionBarActivity {
+	button btnCancel, btnSubmit;
+
+	/* (non-Javadoc)
+	 * @see android.support.v7.app.ActionBarActivity#onCreate(android.os.Bundle)
+	 */
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+	}
+	
+	
+	
+	
+
+}
