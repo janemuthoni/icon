@@ -12,8 +12,9 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class LoginScreenActivity extends Activity implements OnClickListener, OnCheckedChangeListener {
+public class LoginScreenActivity extends Activity implements OnClickListener {
 	//declaring Global variables.-
 	TextView   tvuserrname,tvpassword;
 	EditText   etpassword ,etusername;
@@ -30,7 +31,7 @@ public class LoginScreenActivity extends Activity implements OnClickListener, On
 		etpassword =(EditText)findViewById(R.id.etpassword);
 		
 		checkpasswrd =(CheckBox)findViewById(R.id.checkbox);
-		checkpasswrd.setOnCheckedChangeListener(this);
+		
 		
 		tvuserrname =(TextView)findViewById(R.id.textviewusername);
 		
@@ -44,45 +45,45 @@ public class LoginScreenActivity extends Activity implements OnClickListener, On
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.buttonback:
-			
-startActivity(new Intent(getApplicationContext(),ListScreenActivity.class));
-break;
+		
 		case  R.id.buttonToast:
-String  Username="Akirachixa";
+String  Username="Akirachix";
 String   password= "girls599999";
 
-if (etuser.getText().toString().equals("") && etpass.getText().toString().equals("")) {
+if (etusername.getText().toString().equals("") && etpassword.getText().toString().equals("")) {
+	Toast.makeText(getApplicationContext(), "please enter your username", Toast.LENGTH_LONG).show();
 
-	
-	
-}
-else if (etusername.getText().toString.equals("")) {
-	
-} else if {
 
 }
+else if (etusername.getText().toString () .equals("")) {
+	Toast.makeText(getApplicationContext(), "please enter your username", Toast.LENGTH_LONG).show();	
+	
+} else if (etpassword.getText().toString() .equals("")) {
+	Toast.makeText(getApplicationContext(), "please enter your password", Toast.LENGTH_LONG).show();
+	
+}else if (!etusername.getText().toString() .equals(Username)) {
+	Toast.makeText(getApplicationContext(), "please enter your username", Toast.LENGTH_LONG).show();	
+	
+}else if (!etpassword.getText().toString().equals(password)) {
+	Toast.makeText(getApplicationContext(), "please enter correct password", Toast.LENGTH_LONG).show();	
+	
+}else if (etusername.getText().toString().equals("") && etpassword.getText().toString().equals("")){
+	Toast.makeText(getApplicationContext(), "login succesfully", Toast.LENGTH_LONG).show();	
+}
+
+break;		
+		case  R.id.buttonback:
+			
+			startActivity(new Intent(getApplicationContext(),ListScreenActivity.class));
+
+		}
 			
 			
-		default:
-			break;
+		
+			
 		}
 		
-	}
-
-	@Override
-	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-		if (!isChecked) {
-			
-			etpassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
-			
-		} else {
-			etpassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-			
-
-		}
-		
-	}
 	
 
+	
 }
