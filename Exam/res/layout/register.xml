@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/yellow">
+     <TextView
+           android:id="@+id/username"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/Username"
+           android:textSize="20sp"
+           android:textColor="@color/black" />
+
+       <EditText
+           android:id="@+id/editText2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textPersonName" />
+       
+       <TextView
+           android:id="@+id/email"
+           android:text="@string/email"
+           android:textColor="@color/black"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="14dp"
+           android:textSize="20sp" />
+
+       <EditText
+           android:id="@+id/editText4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textEmailAddress" />
+       
+   <TextView
+     android:id="@+id/password"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/password"
+     android:textSize="25sp"
+     android:textColor="@color/black"
+     android:layout_margin="10dp"/>
+
+      <EditText
+     android:id="@+id/editText1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:ems="10"
+     android:inputType="textPassword" />
+
+      <Button
+          android:id="@+id/buttondisplay"
+          android:layout_width="228dp"
+          android:layout_height="wrap_content"
+          android:text="@string/btndisplay" />
+
+      <Button
+          android:id="@+id/buttonback"
+          android:layout_width="223dp"
+          android:layout_height="wrap_content"
+          android:text="@string/buttonback" />
+
+</LinearLayout>
